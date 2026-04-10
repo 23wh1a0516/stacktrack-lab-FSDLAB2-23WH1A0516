@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import TaskList from './components/TaskList';
-import TaskDetail from './components/TaskDetail';
 import Home from './pages/Home';
+import QuestionComponent from './components/question/QuestionComponent';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path = "/tasks" element = {<TaskList />} />
-          <Route path = "/tasks/:id" element = {<TaskDetail />} />
+          <Route path = "/tasks/:id" element = {<QuestionComponent />} />
         </Routes>
       </Router>
       {/* TODO: Replace this placeholder with Routes */}
